@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+
+.header_hero{
+    padding-top: 46px;
+    display: flex;
+    justify-content: space-between;
+    .navegador_principal ul{
+        display: flex;
+        list-style: none;
+        gap:48px;
+        li{
+            img{
+                display:none;
+            }
+        }
+        a{
+            display: flex;
+            text-decoration: none;
+            color: $gris;
+            flex-direction: column;
+            font-size: 18px;
+            gap: 8px;
+
+            &:hover{
+                color: white;
+                img{
+                    display: flex;
+                    width: 32px;
+                }
+            }
+        }
+    }
+}

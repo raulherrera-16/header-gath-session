@@ -1,0 +1,10 @@
+@use 'variables' as *;
+
+// ─── Responsive (mobile-first) ───
+@mixin breakpoint($bp) {
+  @if      $bp == mobile           { @media (min-width: $bp-mobile)           { @content; } }
+  @else if $bp == tablet           { @media (min-width: $bp-tablet)           { @content; } }
+  @else if $bp == tablet-landscape { @media (min-width: $bp-tablet-landscape) { @content; } }
+  @else if $bp == desktop          { @media (min-width: $bp-desktop)          { @content; } }
+  @else if $bp == desktop-xl       { @media (min-width: $bp-desktop-xl)       { @content; } }
+}

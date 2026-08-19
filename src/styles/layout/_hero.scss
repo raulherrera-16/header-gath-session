@@ -1,0 +1,63 @@
+@use '../base/typography' as *;
+@use '../abstracts/variables' as *;
+.hero {
+    margin-top: 134px;
+    
+        &__titulo{
+            font-size: 80px;
+            color: white;
+            font-family: 'Merriweather';
+            line-height: normal;
+            max-width: 784px;
+            font-weight: 700;
+
+        }
+        &__subtitulo{
+            color: $gris;
+            font-size: 24px;
+            margin-top: 24px;
+            line-height: 40px;
+            font-weight: 400;
+            font-style: normal;
+            max-width: 648px;
+        }
+    
+
+    &__buttons{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-top: 32px;
+        font-size: 18px;
+        .boton {
+            background-color: $fondo_rosa;
+            text-decoration: none;
+            padding: 17px 69px;
+            border-radius: 16px 16px 16px 0 ;
+            font-weight: 400;
+            &:hover{
+                background-color: white;
+                color: $fondo_rosa;
+            }
+        }
+        a {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: 700;
+            &:hover{
+                color: $fondo_rosa;
+            }
+
+        }
+    }
+    &__eventos {
+        list-style: none;
+        margin-top: 144px;
+        display: flex;
+        gap: 48px;
+        margin-bottom: 117px;
+        max-width: 616px;
+    }
+
+}

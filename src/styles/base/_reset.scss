@@ -1,0 +1,23 @@
+@use './typography'as *;
+@use '../abstracts/variables' as *;
+
+html * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+
+}
+
+html {
+    background-color: $fondo_black;
+    font-size: 16px ;
+    font-family: 'poppins';
+    min-width: 1920px;
+    min-height: 1080px;
+}
+
+body {
+    max-width: 1920px;
+    margin: auto;
+}

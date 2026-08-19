@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as *;
+.photo_hero{
+    margin-top: 101px;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-areas: 
+    "lila azul amarillo"
+    "lila naranja amarillo"
+    "rosa naranja amarillo"
+    ;
+    grid-template-columns: 240px 240px 240px;
+    gap: 20px 30px;
+    
+
+
+    div {
+        border-radius:  90px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+    }
+
+   
+
+   
+    
+    &__lila {
+    grid-area: lila;
+    background-color: $fondo_lila;
+    display: flex;
+
+}
+    &__rosa {grid-area: rosa;
+    background-color: $fondo_rosa;
+display: flex;}
+
+    &__cyan {grid-area: azul;
+    background-color: $fondo_cyan;
+display: flex;}
+
+    &__naranja {grid-area: naranja;
+    background-color: $fondo_naranja;
+display: flex;}
+
+    &__yellow {grid-area: amarillo;
+    background-color: $fondo_yellow;
+     display: flex;
+     align-self: center;
+    }
+
+}
